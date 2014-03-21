@@ -50,7 +50,7 @@ public class Taunter extends JavaPlugin
         int dif = top - bottom;
         return bottom + dice.nextInt(dif+1);
     }
-    //Because Youtube said so...
+
     @Override
     public void onEnable()
     {
@@ -68,11 +68,6 @@ public class Taunter extends JavaPlugin
 
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new TauntTimeListener(this), this);
-    }
-    //Because Youtube said so...
-    @Override
-    public void onDisable() {
-        
     }
     
     private void loadYamls()
